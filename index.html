@@ -5,8 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MOMENTUM</title>
+    <link rel="stylesheet" href="CSS/style.css" />
   </head>
   <body>
-    <h1>Hello World</h1>
+    <div id="weather">
+      <span></span>
+      <span></span>
+    </div>
+    <h2 id="clock">00:00</h2>
+    <form id="login-form" class="hidden">
+      <input
+        required
+        maxlength="15"
+        type="text"
+        placeholder="What is your name?"
+      />
+      <button type="submit">Log In</button>
+    </form>
+    <h1 id="greeting" class="hidden"></h1>
+    <form id="todo-form">
+      <input
+        type="text"
+        required
+        placeholder="Write your todo list and press Enter"
+      />
+    </form>
+    <ul id="todo-list"></ul>
+    <div id="quote">
+      <span></span>
+      <span></span>
+    </div>
+    <script src="JS/greeting.js "></script>
+    <script src="JS/clock.js "></script>
+    <script src="JS/quotes.js "></script>
+    <script src="JS/background.js "></script>
+    <script src="JS/todo.js "></script>
+    <script src="JS/weather.js "></script>
   </body>
 </html>
