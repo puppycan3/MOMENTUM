@@ -9,16 +9,30 @@
   </head>
   <body>
     <h2 id="clock">00:00</h2>
+
     <form class="hidden" id="login-form">
       <input
         required
         maxlength="15"
         type="text"
-        placeholder="write your name"
+        placeholder="당신의 이름은 무엇인가요?"
       />
       <button>Log In</button>
     </form>
+
     <h1 id="greeting" class="hidden"></h1>
+
+    <form id="todo-form">
+      <input
+        class="todo-form__todo-input"
+        id="todo-input"
+        required
+        type="text"
+        placeholder="당신이 하고싶은 일을 입력하고 엔터를 눌러주세요"
+      />
+    </form>
+    <ul id="todo-list"></ul>
+
     <div id="quote">
       <span></span>
       <span></span>
@@ -28,5 +42,6 @@
     <script src="JS/prac_clock.js"></script>
     <script src="JS/prac_quotes.js"></script>
     <script src="JS/prac_background.js"></script>
+    <script src="JS/prac_todo.js"></script>
   </body>
 </html>

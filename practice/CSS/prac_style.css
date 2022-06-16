@@ -1,3 +1,9 @@
 .hidden {
   display: none;
 }
+
+.todo-form__todo-input {
+  border: none;
+  padding: 15px 5px;
+  width: 50%;
+}
