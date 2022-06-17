@@ -12,26 +12,28 @@
       <span></span>
       <span></span>
     </div>
-    <h2 class="clock" id="clock">00:00</h2>
-    <form id="login-form" class="hidden">
-      <input
-        required
-        maxlength="15"
-        type="text"
-        placeholder="What is your name?"
-      />
-      <button type="submit">Log In</button>
-    </form>
-    <h1 id="greeting" class="hidden"></h1>
-    <form id="todo-form">
-      <input
-        class=""
-        type="text"
-        required
-        placeholder="Write your todo list and press Enter"
-      />
-    </form>
-    <ul id="todo-list"></ul>
+    <div class="flex-box">
+      <h2 class="clock" id="clock">00:00</h2>
+      <form id="login-form" class="hidden">
+        <input
+          required
+          maxlength="15"
+          type="text"
+          placeholder="Write your name, and press Enter"
+        />
+        <!-- <button type="submit">Log In</button> -->
+      </form>
+      <h1 id="greeting" class="hidden"></h1>
+      <form id="todo-form">
+        <input
+          maxlength="30"
+          type="text"
+          required
+          placeholder="Write your todo list and press Enter"
+        />
+      </form>
+      <ul id="todo-list"></ul>
+    </div>
     <div id="quote">
       <span></span>
       <span></span>

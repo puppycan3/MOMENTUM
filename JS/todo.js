@@ -27,11 +27,10 @@ function paintToDo(newToDo) {
   const i = document.createElement("i");
   i.classList.add("fa-solid");
   i.classList.add("fa-circle-minus");
-  const button = document.createElement("button");
-  button.appendChild(i);
-  button.addEventListener("click", deleteToDo);
+
+  i.addEventListener("click", deleteToDo);
   li.appendChild(span);
-  li.appendChild(button);
+  li.appendChild(i);
   toDoList.appendChild(li);
 }
 
