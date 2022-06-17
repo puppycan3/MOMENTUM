@@ -1,5 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+@import url(reset.css);
+body {
+  background-image: image();
+}
 
 .hidden {
   display: none;
+}
+
+.clock {
+  font-size: 1000%;
+}
+
+button {
+  background-color: none;
+  border: none;
+}
+
+img {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  z-index: -1;
 }

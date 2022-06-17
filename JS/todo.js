@@ -18,13 +18,17 @@ function deleteToDo(event) {
   //   this.parentElement.remove();
 }
 
+// <i class="fa-solid fa-circle-minus"></i>
 function paintToDo(newToDo) {
   const li = document.createElement("li");
   li.id = newToDo.id;
   const span = document.createElement("span");
   span.innerText = newToDo.text;
+  const i = document.createElement("i");
+  i.classList.add("fa-solid");
+  i.classList.add("fa-circle-minus");
   const button = document.createElement("button");
-  button.innerText = "❌";
+  button.appendChild(i);
   button.addEventListener("click", deleteToDo);
   li.appendChild(span);
   li.appendChild(button);
