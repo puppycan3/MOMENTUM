@@ -5,6 +5,7 @@ const toDoList = document.getElementById("todo-list");
 let toDos = [];
 
 const TODOS_KEY = "todos";
+const MAXCOUNT_TODO = 5;
 
 function saveToDos() {
   localStorage.setItem(TODOS_KEY, JSON.stringify(toDos));
@@ -43,6 +44,10 @@ function handleToDoSubmit(event) {
     id: Date.now(),
   };
   toDos.push(newToDoObj);
+  if (toDos.length > MAXCOUNT_TODO) {
+    toDos.pop(newToDoObj);
+    return;
+  }
   paintToDo(newToDoObj);
   saveToDos();
 }
